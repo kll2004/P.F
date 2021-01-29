@@ -28,8 +28,13 @@ public class HomeController {
     public ModelAndView main(ModelAndView mv) throws Exception{
         mv.setViewName("/main/home");
         mv.addObject("setHeader", "타일즈테스트");
-        System.out.println(memberService.getEmail("123"));
         return mv;
-    }	
+    }
+    @RequestMapping(value = "/Mac", method = RequestMethod.GET)
+	public ModelAndView MacGet(ModelAndView mv) {
+		mv.setViewName("/main/Mac");
+		return mv;
+	}
+	
 	
 }
