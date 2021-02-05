@@ -11,220 +11,214 @@
 		<ul class="navbar-nav">				
 			<li class="chapternav-item chapternav-item-macbook-Air">
 	    		<a class="chapternav-link" href="<%=request.getContextPath()%>/MacBook Air">
-    				<figure class="chapternav-icon"></figure>	    		
 		    		<span class="chapternav-label" role="text">MacBook Air</span>
 					<span class="chapternav-new">New</span>
 				</a>
 	   		</li>																											
 			<li class="chapternav-item chapternav-item-macbook-pro-13">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/macbook-pro-13/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">MacBook Pro 13형</span>
 					<span class="chapternav-new">New</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-macbook-pro-16">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/macbook-pro-16/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">MacBook Pro 16형</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-imac">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/kr/imac/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">iMac</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-imac-pro">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/imac-pro/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">iMac Pro</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-mac-pro">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/mac-pro/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">Mac Pro</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-mac-mini">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/mac-mini/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">Mac mini</span>
 					<span class="chapternav-new">New</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-compare">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/mac/compare/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">비교하기<span class="visuallyhidden">Mac 모델</span></span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-pro-display-xdr">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/pro-display-xdr/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">Pro Display XDR</span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-accessories">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/shop/goto/mac/accessories">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">액세서리<span class="visuallyhidden">Mac용</span></span>
 				</a>
 			</li>
 			<li class="chapternav-item chapternav-item-macos">
 				<a class="chapternav-link" href="<%=request.getContextPath()%>/macos/big-sur/">
-					<figure class="chapternav-icon"></figure>
 					<span class="chapternav-label" role="text">Big Sur</span>
 				</a>
 			</li>
-			</ul>
-		</div>
+		</ul>
 	</nav>
-	<main id="main" class="main" role="main" data-page-type="overview" data-anim-scroll-group="bubble-gum-group">
-		<!-- <h1 class="fp-pagetitle">Mac</h1> -->
-		<div class="ribbon theme-dark" data-component-list="Ribbon" data-analytics-activitymap-region-id="ribbon">
-			<div class="ribbon-wrapper will-change">
-				<div class="ribbon-content typography-body-reduced">
-					<p>
-						Apple 교육 할인 스토어에서 신형 MacBook&nbsp;Air가 ₩1,160,000부터. 여기에 AirPods까지 덤으로.<sup class="footnote footnote-number"><a href="#footnote-1" aria-label="Footnote *">*</a></sup> <a class="icon-wrapper nowrap" data-analytics-region="buy" data-analytics-title="shop - education" href="/kr-k12/shop"><span class="icon-copy"><span class="visuallyhidden">교육 할인가로 </span>쇼핑하기</span><span class="more"></span></a>
-					</p>
-				</div>
-			</div>
+	
+	<main id="main" class="main" data-page-type="overview">
+		<div class="#">
+			<p>Apple 교육 할인 스토어에서 신형 MacBookAir가 ₩1,160,000부터. 여기에 AirPods까지 덤으로.<a class="icon-wrapper nowrap" href="#"><span>교육 할인가로</span>쇼핑하기</a></p>
 		</div>
-		<section class="section section-hero theme-dark" data-component-list="ProgressiveImageLoader" data-analytics-section-engagement="name:hero" data-progressive-image-status="downloadComplete">
+		
+		<section class="section section-hero theme-dark">
 			<div class="section-content">
-				<figure class="image image-hero-dark-m1-icon" data-progressive-image="">
-					<h2>
-						<span class="visuallyhidden">M1</span>
-					</h2>
-				</figure>
-				<h2 class="typography-hero-headline-super">이미 도래한 <br>Mac의 미래.</h2>
-				<a href="/kr/mac/m1/" data-analytics-title="learn more about M1" class="icon-wrapper"><span class="icon-copy">M1에 대해 더&nbsp;알아보기</span><span class="icon icon-after more"></span></a>
+				<h2><span class="#">M1</span></h2>
+				<h2>이미 도래한 <br>Mac의 미래.</h2>
+				<a href="#" class="icon-wrapper">
+					<span class="icon-copy">M1에 대해 더 알아보기</span>
+				</a>
 			</div>
 		</section>
-		<section class="section section-macbook-air section-hero-product theme-dark" data-component-list="ProgressiveImageLoader" data-analytics-section-engagement="name:macbook air" data-progressive-image-status="downloadComplete">
-			<div class="section-content">
-				<div class="product-wrapper product-wrapper-right row-reverse  row align-items-center">
-					<div class="product-image column large-8 medium-7 small-12">
-						<figure class="image image-hero-dark-macbook-air" data-progressive-image=""></figure>
-					</div>
-					<div class="product-copy column large-4 medium-5 small-12 small-text-center align-self-center">
-						<span class="violator-frameless typography-hero-product-eyebrow section-hero-product-violator">New</span>
-						<h2 class="typography-hero-product-headline">MacBook&nbsp;Air</h2>
-						<div class="typography-eyebrow-elevated section-hero-product-copy">
-							<p>Air의 흐름을 바꾸다.</p>
-						</div>
-						<p class="typography-body has-dynamic-content">
-							<span data-pricing-product="macbook-air" data-product-template="${ price.display.from }" data-pricing-loaded="">₩1,290,000부터</span>
-						</p>
-						<p class="typography-hero-product-link">
-							<a href="/kr/shop/goto/buy_mac/macbook_air" data-analytics-title="buy macbook air" aria-label="MacBook Air 구입하기" class="button button button-elevated">구입하기</a>
-						</p>
-						<p class="typography-body"><a href="/kr/macbook-air/" data-analytics-title="learn more about macbook air" aria-label="MacBook Air에 대해 더 알아보기" class="icon-wrapper"><span class="icon-copy">더 알아보기</span><span class="icon icon-after more"></span></a></p>
-					</div>
+		
+		<section class="section section-macbook-air section-hero-product theme-dark">
+			<div class="#">
+				<span class="#">New</span>
+				<h2 class="#">MacBook Air</h2>
+				<div class="#">
+					<p>Air의 흐름을 바꾸다.</p>
 				</div>
+				<p class="#">
+					<span>₩1,290,000부터</span>
+				</p>
+				<p class="#">
+					<a href="/macbook_air" class="#">구입하기</a>
+				</p>
+				<p class="#">
+					<a href="/macbook-air/" class="#">
+						<span class="icon-copy">더 알아보기</span>
+					</a>
+				</p>
 			</div>
 		</section>
-		<section class="section section-macbook-pro-13 section-hero-product theme-dark" data-component-list="ProgressiveImageLoader" data-analytics-section-engagement="name:macbook pro 13" data-progressive-image-status="downloadComplete">
-			<div class="section-content">
-				<div class="product-wrapper product-wrapper-left row align-items-center">
-					<div class="product-image column large-8 medium-7 small-12">
-						<figure class="image image-hero-dark-macbook-pro-13" data-progressive-image=""></figure>
-					</div>
-					<div class="product-copy column large-4 medium-5 small-12 small-text-center align-self-center">
-						<span class="violator-frameless typography-hero-product-eyebrow section-hero-product-violator">New</span>
-						<h2 class="typography-hero-product-headline"><span class="typography-hero-product-eyebrow section-hero-product-eyebrow">13형 모델</span>MacBook&nbsp;Pro</h2>
-						<div class="typography-eyebrow-elevated section-hero-product-copy">
-							<p>프로 중의 프로.</p>
-						</div>
-						<p class="typography-body has-dynamic-content">
-							<span data-pricing-product="macbook-pro-13" data-product-template="${ price.display.from }" data-pricing-loaded="">₩1,690,000부터</span>
-						</p>
-						<p class="typography-hero-product-link">
-							<a href="/kr/shop/goto/buy_mac/macbook_pro_13" data-analytics-title="buy macbook pro 13 inch model" aria-label="MacBook Pro 13형 모델 구입하기" class="button button button-elevated">구입하기</a>
-						</p>
-						<p class="typography-body"><a href="/kr/macbook-pro-13/" data-analytics-title="learn more about macbook pro 13-inch model" aria-label="MacBook Pro 13형 모델에 대해 더 알아보기" class="icon-wrapper"><span class="icon-copy">더 알아보기</span><span class="icon icon-after more"></span></a></p>
-					</div>
+		
+		<section class="section section-macbook-pro-13 section-hero-product theme-dark">
+			<div class="#">
+				<span class="#">New</span>
+				<h2 class="#"><span class="#">13형 모델</span>MacBook Pro</h2>
+				<div class="#">
+					<p>프로 중의 프로.</p>
 				</div>
+				<p class="#">
+					<span>₩1,690,000부터</span>
+				</p>
+				<p class="#">
+					<a href="/macbook_pro_13" class="#">구입하기</a>
+				</p>
+				<p class="#">
+					<a href="/macbook-pro-13/" class="#">
+						<span class="#">더 알아보기</span>
+					</a>
+				</p>
 			</div>
 		</section>
-		<section class="section section-mac-mini section-hero-product theme-dark" data-component-list="ProgressiveImageLoader" data-analytics-section-engagement="name:mac mini">
-			<div class="section-content">
-				<div class="product-wrapper product-wrapper-right row-reverse  row align-items-center">
-					<div class="product-image column large-8 medium-7 small-12">
-						<figure class="image image-hero-dark-mac-mini" data-progressive-image=""></figure>
-					</div>
-					<div class="product-copy column large-4 medium-5 small-12 small-text-center align-self-center">
-						<span class="violator-frameless typography-hero-product-eyebrow section-hero-product-violator">New</span>
-						<h2 class="typography-hero-product-headline">Mac mini</h2>
-						<div class="typography-eyebrow-elevated section-hero-product-copy">
-							<p>새로운 파워. 어마무시한 가능성.</p>
-						</div>
-						<p class="typography-body has-dynamic-content">
-							<span data-pricing-product="mac-mini" data-product-template="${ price.display.from }" data-pricing-loaded="">₩890,000부터</span>
-						</p>
-						<p class="typography-hero-product-link">
-							<a href="/kr/shop/goto/buy_mac/mac_mini" data-analytics-title="buy mac mini" aria-label="Mac mini 구입하기" class="button button button-elevated">구입하기</a>
-						</p>
-						<p class="typography-body"><a href="/kr/mac-mini/" data-analytics-title="learn more about mac mini" aria-label="Mac mini에 대해 더 알아보기" class="icon-wrapper"><span class="icon-copy">더 알아보기</span><span class="icon icon-after more"></span></a></p>
-					</div>
+		
+		<section class="section section-mac-mini section-hero-product theme-dark">
+			<div class="#">
+				<span class="#">New</span>
+				<h2 class="#">Mac mini</h2>
+				<div class="#">
+					<p>새로운 파워. 어마무시한 가능성.</p>
 				</div>
+				<p class="#">
+					<span>₩890,000부터</span>
+				</p>
+				<p class="#">
+					<a href="/mac_mini" class="#">구입하기</a>
+				</p>
+				<p class="#">
+					<a href="/kr/mac-mini/"class="#">
+					<span class="#">더 알아보기</span>
+				</p>
 			</div>
 		</section>
-		<section class="section section-compare promo-section" data-component-list="ProgressiveImageLoader" data-analytics-section-engagement="name:compare">
+		
+		<section class="section section-compare promo-section" >
 			<div class="banner-container">
 				<div class="banner-promo">
 					<div class="section-content">
-						<h2 class="typography-headline-elevated headline-elevated large-8 small-12 large-centered text-center">당신에게 맞는 <br>Mac&nbsp;노트북은?</h2>
-						<div class="link-wrapper">
-							<a href="/kr/mac/compare/" data-analytics-title="compare all mac models" aria-label="모든 Mac 모델 비교하기" class="icon-wrapper"><span class="icon-copy">모든 Mac 모델 비교하기</span><span class="icon icon-after more"></span></a>
+						<h2 class=>당신에게 맞는 <br>Mac노트북은?</h2>
+						<div class="#">
+							<a href="/mac/compare/" class="#">
+							<span class="#">모든 Mac 모델 비교하기</span>
+							</a>
 						</div>
-						<div class="compare-table row">
-							<div class="compare-column column-1 column large-4 small-6">
-								<div class="column-content flex-wrapper">
-									<div class="content-wrapper">
-										<div class="flex-header-wrapper">
-											<figure class="column-image image-compare-macbook-air" data-progressive-image=""></figure>
-											<h3 class="compare-headline typography-compare-headline">MacBook Air</h3>
-											<p class="typography-body-reduced copy-pricing">
-												<span aria-label="" class="has-dynamic-content"><span data-pricing-product="macbook-air" data-product-template="${ price.display.from }" data-pricing-loaded="">₩1,290,000부터</span></span>
-											</p>
-										</div>
-										<ul class="feature-list list list-nobullet typography-body-reduced">
-											<li class="list-item display">13.3형 Retina 디스플레이<sup class="footnote footnote-number"><a href="#footnote-2" aria-label="Footnote 1">1</a></sup></li>
-											<li class="list-item processor">Apple&nbsp;M1 칩<br><span class="subtext"><br class="large-hide medium-show small-hide"><br class="large-hide medium-show small-hide"></span></li>
-											<li class="list-item memory">최대 16GB 메모리</li>
-											<li class="list-item storage">최대 2TB 저장 장치<sup class="footnote footnote-number"><a href="#footnote-3" aria-label="Footnote 2">2</a></sup></li>
-											<li class="list-item battery">최대 18시간의 배터리 사용 시간<sup class="footnote footnote-number"><a href="#footnote-4" aria-label="Footnote 3">3</a></sup></li>
-										</ul>
-									</div>
-									<div class="cta-wrapper">
-										<div class="button-wrapper">
-											<a href="/kr/shop/goto/buy_mac/macbook_air" data-analytics-title="buy macbook air" aria-label="MacBook Air 구입하기" class="button button-reduced compare-button">구입하기</a>
-										</div>
-										<div class="compare-link typography-body-reduced">
-											<a href="/kr/macbook-air/" data-analytics-title="learn more about macbook air" aria-label="MacBook Air에 대해 더 알아보기" class="icon-wrapper"><span class="icon-copy">더 알아보기</span><span class="icon icon-after more"></span></a> </div>
-									</div>
+						<div class="#">
+							<div class="#">
+								<div class="#">
+									<h3 class="#">MacBook Air</h3>
+									<p class="#">
+										<span class="#">
+											<span>₩1,290,000부터</span>
+										</span>
+									</p>
+								</div>
+								<ul class="#">
+									<li class="#">13.3형 Retina 디스플레이
+										<sup class="#"><a href="#" >1</a></sup>
+									</li>
+									<li class="#">Apple M1 칩<br>
+										<span class="#"><br class="#"><br class="#"></span>
+									</li>
+									<li class="#">최대 16GB 메모리
+									</li>
+									<li class="#">최대 2TB 저장 장치
+										<sup class="#"><a href="#">2</a></sup>
+									</li>
+									<li class="#">최대 18시간의 배터리 사용 시간
+										<sup class="#"><a href="#">3</a></sup>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="#">
+								<div class="#">
+									<a href="/buy_mac/macbook_air" class="#">구입하기</a>
+								</div>
+								<div class="#">
+									<a href="/macbook-air/" class="#"><span class="#">더 알아보기</span>
 								</div>
 							</div>
-							<div class="compare-column column-2 column large-4 small-6">
-								<div class="column-content flex-wrapper">
-									<div class="content-wrapper">
-										<div class="flex-header-wrapper">
-											<figure class="column-image image-compare-macbook-pro-13" data-progressive-image=""></figure>
+							<div class="#">
+								<div class="#">
+									<div class="#">
+										<div class="#">
 											<h3 class="compare-headline typography-compare-headline">
-												MacBook&nbsp;Pro&nbsp;13형 </h3>
-												<p class="typography-body-reduced copy-pricing">
-													<span aria-label="" class="has-dynamic-content"><span data-pricing-product="macbook-pro-13" data-product-template="${ price.display.from }" data-pricing-loaded="">₩1,690,000부터</span></span>
+												MacBook Pro 13형 </h3>
+												<p class="#">
+													<span class="#">₩1,690,000부터</span>
 												</p>
 										</div>
-										<ul class="feature-list list list-nobullet typography-body-reduced">
-											<li class="list-item display">13.3형 Retina 디스플레이<sup class="footnote footnote-number"><a href="#footnote-2" aria-label="Footnote 1">1</a></sup></li>
-											<li class="list-item processor">Apple&nbsp;M1 칩<br><span class="subtext">Intel&nbsp;Core&nbsp;i5 또는 i7 프로세서로 구성 가능</span></li>
-											<li class="list-item memory">최대 16GB 메모리<sup class="footnote footnote-number"><a href="#footnote-5" aria-label="Footnote 4">4</a></sup></li>
-											<li class="list-item storage">최대 2TB 저장 장치<sup class="footnote footnote-number"><a href="#footnote-5" aria-label="Footnote 4">4</a></sup></li>
-											<li class="list-item battery">최대 20시간의 배터리 사용 시간<sup class="footnote footnote-number"><a href="#footnote-6" aria-label="Footnote 5">5</a></sup></li>
+										<ul class="#">
+											<li class="#">13.3형 Retina 디스플레이
+												<sup class="#"><a href="#">1</a></sup>
+											</li>
+											<li class="#">Apple M1 칩<br>
+												<span class="#">Intel Core i5 또는 i7 프로세서로 구성 가능</span>
+											</li>
+											<li class="#">최대 16GB 메모리
+												<sup class="#"><a href="#">4</a></sup>
+											</li>
+											<li class="#">최대 2TB 저장 장치
+												<sup class="#"><a href="#" >4</a></sup>
+											</li>
+											<li class="#">최대 20시간의 배터리 사용 시간
+												<sup class="#"><a href="#">5</a></sup>
+											</li>
 										</ul>
 									</div>
 									<div class="cta-wrapper">
