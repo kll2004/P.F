@@ -24,7 +24,7 @@
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/iPad">iPad</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<%=request.getContextPath()%>/iphone">iphone</a>
+		        	<a class="nav-link" href="<%=request.getContextPath()%>/iPhone">iPhone</a>
 		      	</li>
 		      	<li class="nav-item">
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/Watch">Watch</a>
@@ -33,15 +33,15 @@
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/Music">Music</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<%=request.getContextPath()%>/signup">고객지원</a>
+		        	<a class="nav-link" href="<%=request.getContextPath()%>/Support">고객지원</a>
 		      	</li>
-	      	</c:if>
 	      		<li class="nav-item">
-		        	<a class="nav-link" href="<%=request.getContextPath()%>/board/search">검색</a>
+		        	<a class="nav-link" href="<%=request.getContextPath()%>/Search">검색icon</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="<%=request.getContextPath()%>/board/basket">장바구니</a>
+		        	<a class="nav-link" href="<%=request.getContextPath()%>/Cart">장바구니icon</a>
 		      	</li>
+			</c:if>
 	      	<c:if test="${user != null}">
 		      	<li class="nav-item">
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/signout">로그아웃</a>

@@ -35,6 +35,41 @@ public class HomeController {
 		mv.setViewName("/main/Mac");
 		return mv;
 	}
+    @RequestMapping(value = "/iPad", method = RequestMethod.GET)
+	public ModelAndView iPadGet(ModelAndView mv) {
+		mv.setViewName("/main/iPad");
+		return mv;
+	}
+    @RequestMapping(value = "/iPhone", method = RequestMethod.GET)
+	public ModelAndView iPoneGet(ModelAndView mv) {
+		mv.setViewName("/main/iPhone");
+		return mv;
+	}
+    @RequestMapping(value = "/Watch", method = RequestMethod.GET)
+	public ModelAndView WatchGet(ModelAndView mv) {
+		mv.setViewName("/main/Watch");
+		return mv;
+	}
+    @RequestMapping(value = "/Music", method = RequestMethod.GET)
+	public ModelAndView MusicGet(ModelAndView mv) {
+		mv.setViewName("/main/Music");
+		return mv;
+	}
+    @RequestMapping(value = "/Support", method = RequestMethod.GET)
+	public ModelAndView SupportGet(ModelAndView mv) {
+		mv.setViewName("/main/Support");
+		return mv;
+	}
+    @RequestMapping(value = "/Search", method = RequestMethod.GET)
+	public ModelAndView SearchGet(ModelAndView mv) {
+		mv.setViewName("/main/Search");
+		return mv;
+	}
+    @RequestMapping(value = "/Cart", method = RequestMethod.GET)
+	public ModelAndView CartGet(ModelAndView mv) {
+		mv.setViewName("/main/Cart");
+		return mv;
+	}
 	
 	
 }
