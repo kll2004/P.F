@@ -4,20 +4,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<style>
+	.menu{
+		text-align : center;
+	}
+	.container, .menu{
+		background-color: #1d1d1f important
+	}
+	.menu{
+		background-color : #343a40!important;
+	}
+</style>
+<meta charset="UTF-8">
 </head>
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-	<div class="container">
-	  	<a class="navbar-brand" href="<%=request.getContextPath()%>/">애플아이콘</a>
-	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    	<span class="navbar-toggler-icon"></span>
-	  	</button>
-	  	<div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    	<ul class="navbar-nav">
-	    	<c:if test="${user == null}">
-		      	<li class="nav-item">
+	<div class="menu">
+		<nav class="navbar navbar-expand-sm navbar" style="background-color : #1d1d1f">
+			<ul class="container">
+				<a href="https://www.apple.com/kr/">
+					<img src="https://www.apple.com/ac/globalnav/6/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg">
+				</a>
+				<li class="nav-item">
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/Mac">Mac</a>
 		      	</li>
 		      	<li class="nav-item">
@@ -41,15 +48,13 @@
 		      	<li class="nav-item">
 		        	<a class="nav-link" href="<%=request.getContextPath()%>/Cart">장바구니icon</a>
 		      	</li>
-			</c:if>
-	      	<c:if test="${user != null}">
-		      	<li class="nav-item">
-		        	<a class="nav-link" href="<%=request.getContextPath()%>/signout">로그아웃</a>
-		      	</li>
-	      	</c:if>
-	    	</ul>
-		</div> 
-	</div> 
-</nav>
+		      	<c:if test="${user != null}">
+			      	<li class="nav-item">
+			        	<a class="nav-link" href="<%=request.getContextPath()%>/signout">로그아웃</a>
+			      	</li>
+		      	</c:if>
+			</ul>
+		</nav>
+	</div>
 </body>
 </html>
