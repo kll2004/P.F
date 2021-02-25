@@ -23,6 +23,17 @@
 	    margin-inline-end: 0px;
 	    font-weight: bold;
 	}
+	ul{
+		margin-right : 20px;
+	}
+	li{
+		color: #515154;
+		font-size : 12px;
+		margin-bottom: 5px;		
+	}
+	.f-title{
+		font-size : 10px;
+	}
 </style>
 
 <meta charset="EUC-KR">
@@ -41,7 +52,7 @@
 		<hr>
 		<div class="footer-mid">				
 			<div class="footer-mid-col">
-				<h3>쇼핑 및 알아보기</h3>
+				<span class="f-title">쇼핑 및 알아보기</span>
 				<ul>
 					<li><a href="http://localhost:8080/Pf/Mac">Mac</a></li>
 					<li><a href="http://localhost:8080/Pf/ipad/">iPad</a></li>
@@ -55,7 +66,7 @@
 			</div>		
 			<div class="footer-mid-col">
 				<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -65,7 +76,7 @@
 					</ul>
 				</div>
 				<div class="footer-mid-col">
-					<h3>계정</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -76,7 +87,7 @@
 				</div>
 			</div>
 			<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -87,7 +98,7 @@
 				</div>
 			<div class="footer-mid-col">
 				<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -97,7 +108,7 @@
 					</ul>
 				</div>
 				<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -109,7 +120,7 @@
 			</div>
 			<div class="footer-mid-col">
 				<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>
@@ -119,7 +130,7 @@
 					</ul>
 				</div>
 				<div class="footer-mid-col">
-					<h3>서비스</h3>
+					<span class="f-title">서비스</span>
 					<ul class="ac-gf-directory-column-section-list">
 						<li><a href="http://localhost:8080/Pf/apple-music/">Apple Music</a></li>
 						<li><a href="http://localhost:8080/Pf/apple-arcade/">Apple Arcade</a></li>

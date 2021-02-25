@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="kr.green.Pf.dao.MemberDao">
-  <select id="getEmail" resultType="String">
-    select us_name from user where us_email = #{id}
+<mapper namespace="kr.green.Pf.dao.ProductDao">
+  <select id="getProductList" resultType="kr.green.Pf.vo.ProductVo">
+    select * from pr where pr_category = #{category}
   </select>
 </mapper>
