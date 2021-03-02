@@ -34,10 +34,10 @@
 	<div class="contain">
 		<div class="top">
 			<div class="top" margin-top="56px">
-				<h1 style="font-size: 56px">당신에게 알맞은 iPad를 찾아보세요.</h1>
+				<h1 style="font-size: 56px">당신에게 알맞은 Apple Watch는?</h1>
 			</div>
 			<a href="https://www.apple.com/kr/mac/compare/">
-				<h5>iPad 모델 비교하기</h5>
+				<h5>전체 모델 비교하기</h5>
 			</a>
 		</div>
 		<hr>
@@ -45,7 +45,7 @@
 			<div class="container flex">
 				<div class="ipad"  href="#">
 					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/ipad/home/bk/images/overview/compare_ipad_air__dlzfpz8gev42_large.png">						
+						<img class="macbook-air">						
 					</div>
 					<span>iPad Pro</span><br>
 					<span>₩1,029,000부터</span>
@@ -57,19 +57,7 @@
 				</div>
 				<div class="ipad"  href="#">
 					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/ipad/home/bk/images/overview/compare_ipad_air__dlzfpz8gev42_large.png">						
-					</div>
-					<span>iPad Pro</span><br>
-					<span>₩1,029,000부터</span>
-					<hr>
-					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
-					</div>					
-				</div>
-				<div class="ipad"  href="#">
-					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/ipad/home/bk/images/overview/compare_ipad_air__dlzfpz8gev42_large.png">						
+						<img class="macbook-air" src="https://www.apple.com/ac/globalnav/6/kr/watch/shared/compare/d/images/overview/compare_s6__evsi0wlzp4ya_medium.jpg">						
 					</div>
 					<span>iPad Pro</span><br>
 					<span>₩1,029,000부터</span>
@@ -103,7 +91,7 @@
 						<a href="#">iPad 액세서리 쇼핑하기</a>
 					</div>					
 					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/ipad/home/bk/images/overview/accessories__d6ltr7n1knyq_small.jpg">						
+						<img class="macbook-air" src="https://www.apple.com/v/watch/home/ai/images/overview/bands/tile_bands_winter__dr3z2qgi0z2a_medium.jpg">						
 					</div>					
 				</div>
 				<div class="container"  href="#">

@@ -90,6 +90,10 @@ public class HomeController {
 		mv.setViewName("/main/Cart");
 		return mv;
 	}
-	
+    @RequestMapping(value = "/buy", method = RequestMethod.GET)
+	public ModelAndView buyGet(ModelAndView mv) {
+		mv.setViewName("/main/buy");
+		return mv;
+	}
 	
 }
