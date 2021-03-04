@@ -27,18 +27,6 @@
 			width:100%;
 			text-align: center;
 		}
-		.font{
-			color : #f5f5f7;
-			font-size : 12px;
-			width: 77px;
-		}
-		.new{
-			color : #f56300;
-			font-size : 10px;
-		}
-		.box{
-			height: 90px;
-		}
 	</style>
 </head>
 <body style="background-color : #f2f2f2">
@@ -54,16 +42,16 @@
 		<div class="mid">
 			<div class="container flex">
 				<c:forEach items="${list}" var="pr">
-				<div class="iphone"  href="#">
+				<div class="iphone">
 					<div class="iphone-img">
 						<img class="phone" src="${pr.pr_img_url}">						
 					</div>
 					<span>${pr.pr_name}</span><br>
-						<span>₩${pr.pr_price_str}부터</span>
+					<span>₩${pr.pr_price_str}부터</span>
 					<hr>
 					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
+						<a class="buy">구입하기</a>
+						<a class="search">더 알아보기</a>
 					</div>					
 				</div>
 				</c:forEach>
@@ -77,8 +65,7 @@
 					<div class="container">
 						<h2>${ac.ac_title }</h2>
 						<p>${ac.ac_information }</p>
-						<a href="#">더 알아보기</a>
-						
+						<a href="#">더 알아보기</a>						
 						<div class="ac">
 							<div class="ac-img-box">
 								<img class="ac-img" src="${ac.ac_img_url}">						

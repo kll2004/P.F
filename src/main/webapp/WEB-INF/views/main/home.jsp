@@ -1,53 +1,112 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page session="false" %>
+<!DOCTYPE html>
 <html>
 <head>
-	<style>
-		.
-	</style>
+<style>
+	.home{
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+		max-width : 2560px;
+	}
+	.iphone-img{
+		width: 3010px;
+		height: 736px;
+		text-align: center;
+	}
+	.t1{
+		font-size: 56px;
+	}
+	.t2{
+		color : #86868b;
+		font-size:17px;
+	}
+	.t1{
+		font-weight: 500;
+	}
+	.home-img-box1{
+		background-image: url(https://www.apple.com/kr/home/w/images/heroes/iphone-12/iphone_12_us__fo0stbby242m_largetall.jpg);
+		height: 500px;
+		background-position: center;
+	}
+	.home-img-box2{
+		background-image: url(https://www.apple.com/v/home/w/images/heroes/iphone-12-pro/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
+		height: 500px;
+		background-position: center;
+		margin-top: 20px;
+	}
+	.home-img-box3{
+		background-image: url(https://www.apple.com/v/home/w/images/heroes/ipad-air/hero__dvsxv8smkkgi_large.jpg);
+		height: 400px;
+		background-position: center;
+		margin-top: 20px;
+	}
+	.home-img-box4{
+		background-image: url(https://www.apple.com/v/home/w/images/promos/macbook-air/macbook_air__knzp0i282eyy_large.jpg);
+		height: 500px;
+		background-position: center;
+		margin-top: 20px;
+	}
+	.home-img-box5{
+		background-image: url(https://www.apple.com/kr/home/w/images/promos/watch-series-6/tile__cauwwcyyn9hy_large.jpg);
+		height: 380px;
+		background-position: center;
+	}
+</style>
+
+<meta charset="UTF-8">
 </head>
 <body>
 	<div class="home">
-		<div class="home-box1">
-			<div class="box1-title">
-				<span>아이폰12 빠르게 지나가십시오</span>
-			</div>
-			<div class="buy-box">
-				<a class="">더 알아보기</a><a class="">구매</a>
-			</div>
-			<img class="" src="https://www.apple.com/v/home/w/images/heroes/iphone-12/iphone_12_us__fo0stbby242m_largetall.jpg">			
-		</div>
-		<div class="home-box2">
-			<div class="box2-title">
-				<span>아이폰12 프로<br>윤년입니다.</span>
-			</div>
-			<div class="buy-box">
-				<a class="">더 알아보기</a><a class="">구매</a>
-			</div>
-		</div>
-		<div class="home-box3">
-			<div class="box3-title">
-				<span>아이패드 에어</span>
-			</div>
-			<div class="buy-box">
-				<a class="">더 알아보기</a><a class="">구매</a>
-			</div>
-		</div>
-		<div class="home-box4">
-			<div class="home-box4-left">
-				<div class="box4-left-title">
-					<span>맥북 에어</span>
+		<div class="home-box1">			
+			<div class="home-img-box1">
+				<div class="box1-title">
+					<span class="t1">iPhone12</span><br>
+					<span class="t2">가격은 ₩950,000부터</span>
 				</div>
 				<div class="buy-box">
 					<a class="">더 알아보기</a><a class="">구매</a>
 				</div>
 			</div>
-			<div class="home-box4-right">
-				<div class="box4-right-title">
-					<span>WATCH</span>
-					<span>건강의 미래는 당신의 손목에 있습니다.</span>
+		</div>
+		<div class="home-box2">
+			<div class="home-img-box2">
+				<div class="box2-title">
+					<span class="t1" style="color : #f5f5f7">iPhone12 Pro</span><br>
+					<span class="t2">가격은 ₩1350,000부터</span>
+				</div>
+				<div class="buy-box">
+					<a class="">더 알아보기</a><a class="">구매</a>
+				</div>
+			</div>
+		</div>
+		<div class="home-box3">
+			<div class="home-img-box3">
+				<div class="box3-title">
+					<span class="t1">iPad Air</span><br>
+				</div>
+				<div class="buy-box">
+					<a class="">더 알아보기</a><a class="">구매</a>
+				</div>
+			</div>
+		</div>
+		<div class="home-box4">
+			<div class="home-img-box4">
+				<div class="box4-title">
+					<span class="t1" style="color : #f5f5f7">MacBook Air</span><br>
+				</div>
+				<div class="buy-box">
+					<a class="">더 알아보기</a><a class="">구매</a>
+				</div>
+			</div>
+		</div>
+		<div class="home-box5">
+			<div class="home-img-box5">
+				<div class="box5-title">
+					<span class="t1" style="color : #f5f5f7">Watch</span><br>
+					<span style="color : #f5f5f7">건강의 미래는 당신의 손목에 있습니다.</span>
 				</div>
 				<div class="buy-box">
 					<a class="">더 알아보기</a><a class="">구매</a>

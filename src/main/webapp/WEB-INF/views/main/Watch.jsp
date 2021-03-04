@@ -5,10 +5,6 @@
 <html>
 <head>
 	<style>
-		.li,.ul{
-			list-style:none;
-			text-align : center;
-		}
 		.contain{
 			text-align : center;
 			background-color : #fff;			
@@ -16,17 +12,21 @@
 		.container{
 			text-align : center;
 		}
-		.ipad{
+		.flex{		
+			display : flex;
+		}		
+		.buy{
+			margin-right: 5px;
+		}
+		.ac{
 			display: block;
 			width:100%;
 			text-align: center;
 		}
-		.flex{
-		
-			display : flex;
-		}
-		.buy{
-			margin-right: 5px;
+		.watch{
+			display: block;
+			width:100%;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -43,65 +43,43 @@
 		<hr>
 		<div class="mid">
 			<div class="container flex">
-				<div class="ipad"  href="#">
-					<div class="ipad-img">
-						<img class="macbook-air">						
+				<c:forEach items="${list}" var="pr">
+				<div class="watch">
+					<div class="watch-img">
+						<img class="watch-s" src="${pr.pr_img_url}">						
 					</div>
-					<span>iPad Pro</span><br>
-					<span>₩1,029,000부터</span>
+					<span>${pr.pr_name}</span><br>
+					<span>₩${pr.pr_price_str}부터</span>
 					<hr>
 					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
+						<a class="buy">구입하기</a>
+						<a class="search">더 알아보기</a>
 					</div>					
 				</div>
-				<div class="ipad"  href="#">
-					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/ac/globalnav/6/kr/watch/shared/compare/d/images/overview/compare_s6__evsi0wlzp4ya_medium.jpg">						
-					</div>
-					<span>iPad Pro</span><br>
-					<span>₩1,029,000부터</span>
-					<hr>
-					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
-					</div>					
-				</div>
-				<div class="ipad"  href="#">
-					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/ipad/home/bk/images/overview/compare_ipad_air__dlzfpz8gev42_large.png">						
-					</div>
-					<span>iPad Pro</span><br>
-					<span>₩1,029,000부터</span>
-					<hr>
-					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
-					</div>					
-				</div>
+				</c:forEach>
 			</div>
 		</div>
 		<hr>
 		<div class="bottom">
 			<div class="container flex">
-				<div class="container"  href="#">
-					<h3 class="promo-headline typography-promo-headline">액세서리</h3>
+				<div class="container" style="background-color : #fafafa">
+					<h3>액세서리</h3>
 					<p>iPad를 최대한 활용하는 데 도움이 되는 커버, 케이스, 그 밖에 다양한 액세서리를 만나보세요.</p>
-					<div class="#">
+					<div>
 						<a href="#">iPad 액세서리 쇼핑하기</a>
 					</div>					
-					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/v/watch/home/ai/images/overview/bands/tile_bands_winter__dr3z2qgi0z2a_medium.jpg">						
-					</div>					
+					<div class="ac">
+						<img class="ac-img" src="https://www.apple.com/v/watch/home/ai/images/overview/bands/tile_bands_winter__dr3z2qgi0z2a_medium.jpg">						
+					</div>			
 				</div>
-				<div class="container"  href="#">
-					<h3 class="promo-headline typography-promo-headline">자신만의 이야기를 새기다.</h3>
+				<div class="container">
+					<h3>자신만의 이야기를 새기다.</h3>
 					<p>AirPods을 위한 새로운 각인 옵션.글자, 이모티콘, 숫자 조합으로 더욱 개성 있게.</p>
-					<div class="#">
+					<div>
 						<a href="#">더 알아보기</a>
 					</div>					
-					<div class="ipad-img">
-						<img class="macbook-air" src="https://www.apple.com/kr/ipad/home/bk/images/overview/ipad_airpods_engraving_update__6yqu02ndeyau_small.jpg">						
+					<div class="ac">
+						<img class="ac-img" src="https://www.apple.com/kr/ipad/home/bk/images/overview/ipad_airpods_engraving_update__6yqu02ndeyau_small.jpg">						
 					</div>					
 				</div>
 			</div>

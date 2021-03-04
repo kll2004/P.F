@@ -66,6 +66,10 @@ public class HomeController {
 	}
     @RequestMapping(value = "/Watch", method = RequestMethod.GET)
 	public ModelAndView WatchGet(ModelAndView mv) {
+    	ArrayList<ProductVo> list = productService.getProductList("Watch");
+    	ArrayList<AccessoriesVo> alist = accessoriesService.getAccessoriesList();
+    	mv.addObject("alist",alist);
+    	mv.addObject("list",list);
     	mv.addObject("type","Watch");
 		mv.setViewName("/main/Watch");
 		return mv;
