@@ -44,8 +44,7 @@ public class HomeController {
 		return mv;
 	}
     @RequestMapping(value = "/iPad", method = RequestMethod.GET)
-	public ModelAndView iPadGet(ModelAndView mv) {
-    	
+	public ModelAndView iPadGet(ModelAndView mv) {   	
     	ArrayList<ProductVo> list = productService.getProductList("iPad");
     	ArrayList<AccessoriesVo> alist = accessoriesService.getAccessoriesList();
     	mv.addObject("alist",alist);
@@ -96,6 +95,9 @@ public class HomeController {
 	}
     @RequestMapping(value = "/buy", method = RequestMethod.GET)
 	public ModelAndView buyGet(ModelAndView mv) {
+    	ArrayList<ProductVo> list = productService.getProductList("buy");
+    	mv.addObject("list",list);
+    	mv.addObject("type","buy");
 		mv.setViewName("/main/buy");
 		return mv;
 	}

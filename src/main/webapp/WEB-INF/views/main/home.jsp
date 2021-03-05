@@ -17,11 +17,11 @@
 		text-align: center;
 	}
 	.t1{
-		font-size: 56px;
+		font-size: 55px;
 	}
 	.t2{
 		color : #86868b;
-		font-size:17px;
+		font-size:25px;
 	}
 	.t1{
 		font-weight: 500;
@@ -53,6 +53,8 @@
 		background-image: url(https://www.apple.com/kr/home/w/images/promos/watch-series-6/tile__cauwwcyyn9hy_large.jpg);
 		height: 380px;
 		background-position: center;
+		background-repeat: no-repeat;
+		background-color: black;
 	}
 </style>
 
@@ -67,7 +69,7 @@
 					<span class="t2">가격은 ₩950,000부터</span>
 				</div>
 				<div class="buy-box">
-					<a class="">더 알아보기</a><a class="">구매</a>
+					<a class="">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
 				</div>
 			</div>
 		</div>
@@ -75,10 +77,10 @@
 			<div class="home-img-box2">
 				<div class="box2-title">
 					<span class="t1" style="color : #f5f5f7">iPhone12 Pro</span><br>
-					<span class="t2">가격은 ₩1350,000부터</span>
+					<span class="t2">가격은 ₩1,350,000부터</span>
 				</div>
 				<div class="buy-box">
-					<a class="">더 알아보기</a><a class="">구매</a>
+					<a class="">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
 				</div>
 			</div>
 		</div>
@@ -88,7 +90,7 @@
 					<span class="t1">iPad Air</span><br>
 				</div>
 				<div class="buy-box">
-					<a class="">더 알아보기</a><a class="">구매</a>
+					<a class="">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
 				</div>
 			</div>
 		</div>
@@ -98,7 +100,7 @@
 					<span class="t1" style="color : #f5f5f7">MacBook Air</span><br>
 				</div>
 				<div class="buy-box">
-					<a class="">더 알아보기</a><a class="">구매</a>
+					<a class="">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
 				</div>
 			</div>
 		</div>
@@ -109,7 +111,7 @@
 					<span style="color : #f5f5f7">건강의 미래는 당신의 손목에 있습니다.</span>
 				</div>
 				<div class="buy-box">
-					<a class="">더 알아보기</a><a class="">구매</a>
+					<a class="">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
 				</div>
 			</div>
 		</div>

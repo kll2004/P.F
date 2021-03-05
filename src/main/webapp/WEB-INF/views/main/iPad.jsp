@@ -25,16 +25,16 @@
 		.ipad{
 			display: block;
 			width:100%;
-			text-align: center;
 		}
 		
 		.ipad-img-box{
-			width:200px;
+			width:100%;
 			height:200px;
 		}
 		.ipad-img{
 			width:135px;
 			height:190px;
+			text-align : center;
 		}
 	</style>
 </head>

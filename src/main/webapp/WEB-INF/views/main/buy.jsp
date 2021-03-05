@@ -30,6 +30,7 @@
 		width: 100%;
 		text-align : center;
 		padding-bottom: 50px;
+		margin-top:0;
 	}
 	.box{
 		width: 33.33%
@@ -40,7 +41,7 @@
 	<div class="container buy">
 		<div class="buy-left">
 			<div class="buy-left-top">
-				<img class="buy-left-top-img" src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-space-gray-config-201810?wid=539&hei=312&fmt=jpeg&qlt=95&.v=1603332211000">
+				<img class="buy-left-top-img" src="${pr.pr_img_url}">
 				<div class="view-box">
 					<a class="view">갤러리 보기</a>
 				</div>

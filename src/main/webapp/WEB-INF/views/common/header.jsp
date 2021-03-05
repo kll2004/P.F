@@ -74,7 +74,7 @@
 		        	<a class="font3" href="<%=request.getContextPath()%>/Watch">Watch</a>
 		      	</li>
 		      	<li>
-		        	<a class="font3" href="<%=request.getContextPath()%>/Music">Music</a>
+		        	<a class="font3" href="<%=request.getContextPath()%>/buy">제품구매</a>
 		      	</li>
 		      	<li>
 		        	<a class="font3" href="<%=request.getContextPath()%>/Support">고객지원</a>
