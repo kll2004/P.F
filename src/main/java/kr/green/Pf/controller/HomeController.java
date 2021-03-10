@@ -13,8 +13,10 @@ import org.springframework.web.servlet.ModelAndView;
 import kr.green.Pf.service.AccessoriesService;
 import kr.green.Pf.service.MemberService;
 import kr.green.Pf.service.ProductService;
-import kr.green.Pf.vo.ProductVo;
+import kr.green.Pf.service.UserService;
 import kr.green.Pf.vo.AccessoriesVo;
+import kr.green.Pf.vo.ProductVo;
+import kr.green.Pf.vo.UserVo;
 
 
 @Controller
@@ -28,6 +30,8 @@ public class HomeController {
     ProductService productService;
     @Autowired
     AccessoriesService accessoriesService;
+    @Autowired
+    UserService userService;
     
     @RequestMapping(value="/")
     public ModelAndView main(ModelAndView mv) throws Exception{
@@ -94,12 +98,28 @@ public class HomeController {
 		return mv;
 	}
     @RequestMapping(value = "/buy", method = RequestMethod.GET)
-	public ModelAndView buyGet(ModelAndView mv) {
-    	ArrayList<ProductVo> list = productService.getProductList("buy");
-    	mv.addObject("list",list);
+	public ModelAndView buyGet(ModelAndView mv, String num) {
+    	ProductVo pr = productService.getProduct(num);
+    	mv.addObject("pr",pr);
     	mv.addObject("type","buy");
 		mv.setViewName("/main/buy");
 		return mv;
 	}
-	
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+	public ModelAndView signupGet(ModelAndView mv) {
+		mv.setViewName("/main/signup");
+		return mv;
+	}
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView loginGet(ModelAndView mv) {
+		mv.setViewName("/main/login");
+		return mv;
+	}
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	public ModelAndView loginPOST(ModelAndView mv, String id, String pw)	{
+		UserVo isUser = userService.isUser(id, pw);
+		mv.addObject("user",isUser);	
+		mv.setViewName("redirect:/");
+		return mv;
+	}
 }

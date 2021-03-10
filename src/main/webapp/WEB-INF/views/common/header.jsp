@@ -89,6 +89,14 @@
 		        		<img class="i-img" src="https://www.apple.com/ac/globalnav/6/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg">
 		        	</a>
 		      	</li>
+		      	<c:if test="${user == null}">
+			      	<li>
+			        	<a class="font3" href="<%=request.getContextPath()%>/signup">회원가입</a>
+			      	</li>
+			      	<li>
+			        	<a class="font3" href="<%=request.getContextPath()%>/login">로그인</a>
+			      	</li>
+		      	</c:if>
 		      	<c:if test="${user != null}">
 			      	<li>
 			        	<a class="font3" href="<%=request.getContextPath()%>/signout">로그아웃</a>
@@ -173,8 +181,7 @@
 				</div>
 			</div>
 		</div>
-	</c:if>
-	
+	</c:if>	
 	<c:if test="${type == 'iPad' }">
 		<div style="background-color : #ffffff;">
 			<div class="container">

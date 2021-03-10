@@ -7,6 +7,6 @@ import kr.green.Pf.vo.ProductVo;
 public interface ProductService {
 
 	ArrayList<ProductVo> getProductList(String category);
-	
+	ProductVo getProduct(String category);
 
 }

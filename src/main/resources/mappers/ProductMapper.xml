@@ -6,4 +6,7 @@
   <select id="getProductList" resultType="kr.green.Pf.vo.ProductVo">
     select * from pr where pr_category = #{category}
   </select>
+  <select id="getProduct" resultType="kr.green.Pf.vo.ProductVo">
+    select * from pr where pr_num = #{pr_num}
+  </select>
 </mapper>
