@@ -2,6 +2,8 @@ package kr.green.Pf.controller;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -119,6 +121,12 @@ public class HomeController {
 	public ModelAndView loginPOST(ModelAndView mv, String id, String pw)	{
 		UserVo isUser = userService.isUser(id, pw);
 		mv.addObject("user",isUser);	
+		mv.setViewName("redirect:/");
+		return mv;
+	}
+	@RequestMapping(value = "/signout", method = RequestMethod.GET)
+	public ModelAndView signoutGet(ModelAndView mv,HttpServletRequest request) {
+		request.getSession().removeAttribute("user");
 		mv.setViewName("redirect:/");
 		return mv;
 	}
