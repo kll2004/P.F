@@ -259,7 +259,7 @@
 					<a class="icon-box" href="#">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_12_pro_dark__c1xodf0hb1w2_large.svg"><br>
 						<span class="a">
-							<span class="font">iPhone 12 Pror</span><br>		
+							<span class="font">iPhone 12 Pro</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>

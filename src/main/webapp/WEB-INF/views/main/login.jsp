@@ -43,12 +43,22 @@
 		width:350px;
 		border-radius:20px;
 	}
+	.r-mini{
+		height: auto;
+		margin-top:80px;
+		margin-left:30px;
+		width: 42px;
+		border-left:1px solid #d2d2d7;
+		box-sizing:border-box;
+	}
 </style>
 <meta charset="UTF-8">
 </head>
 <body>
-	<p class="top-talk">더욱 빠르게 결제하시려면 로그인하세요.</p>
-	<div class="login-main-box">
+	<div class="container">
+		<p class="top-talk">더욱 빠르게 결제하시려면 로그인하세요.</p>
+	</div>	
+	<div class="login-main-box container">
 		<div class="login-box container">
 			<form action="<%=request.getContextPath() %>/login" method="POST" class="login-main">
 				<div class="form-group">
@@ -63,6 +73,7 @@
 			</form>
 			<a href="#" class = "find-pw">Apple ID 또는 암호를 잊으셨습니까?</a>
 		</div>
+		<div class="r-mini"></div>
 		<div class="login-box container">
 			<form action="<%=request.getContextPath() %>/login" method="POST" class="login-main">
 				<div class="form-group">
@@ -75,7 +86,7 @@
 	</div>
   <script type="text/javascript">
 	  	$('.find-pw').click(function(){
-		  var id = prompt('찿을 아이디를 입력');
+		  var id = prompt('찿을 Apple ID 입력');
 		  var data = {'id' : id};
 		  $.ajax({
 				type : 'POST',

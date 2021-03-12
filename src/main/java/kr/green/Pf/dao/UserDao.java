@@ -8,4 +8,7 @@ public interface UserDao {
 
 	UserVo getUser(@Param("id") String id);
 
+
+	void insertUser(@Param("user")UserVo user);
+
 }

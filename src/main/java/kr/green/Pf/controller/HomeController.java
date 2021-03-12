@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import kr.green.Pf.service.AccessoriesService;
@@ -107,11 +108,6 @@ public class HomeController {
 		mv.setViewName("/main/buy");
 		return mv;
 	}
-    @RequestMapping(value = "/signup", method = RequestMethod.GET)
-	public ModelAndView signupGet(ModelAndView mv) {
-		mv.setViewName("/main/signup");
-		return mv;
-	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView loginGet(ModelAndView mv) {
 		mv.setViewName("/main/login");
@@ -124,10 +120,35 @@ public class HomeController {
 		mv.setViewName("redirect:/");
 		return mv;
 	}
+	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	public ModelAndView signupGet(ModelAndView mv) {
+		mv.setViewName("/main/signup");
+		return mv;
+	}
+	@RequestMapping(value = "/signup", method = RequestMethod.POST)
+	public ModelAndView signupPOST(ModelAndView mv, UserVo user) {		
+		boolean signup = userService.signup(user);
+		if(signup) {
+			mv.setViewName("redirect:/");
+		}else {
+			mv.setViewName("redirect:/signup");
+		}
+		return mv;
+	}
 	@RequestMapping(value = "/signout", method = RequestMethod.GET)
 	public ModelAndView signoutGet(ModelAndView mv,HttpServletRequest request) {
 		request.getSession().removeAttribute("user");
 		mv.setViewName("redirect:/");
 		return mv;
+	}
+	
+	@RequestMapping(value = "/dup", method = RequestMethod.POST)
+	@ResponseBody
+	public String dupGet(String id) {
+		UserVo user = userService.getUser(id);
+		if(user == null) {
+			return "ok";
+		}
+		return "no";
 	}
 }
