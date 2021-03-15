@@ -4,11 +4,111 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Cart</title>
+<style>
+	.top-price{
+		margin:0 auto;  
+		text-align: center;
+		padding-bottom:60px;
+		padding-top:10px;
+	}
+	.basket{
+		font-size:40px;
+		font-weight:600;
+	}
+	.service-box{
+		padding-top:13px;
+	}
+	.btn-primary{
+		height:50px;
+		width:30%;
+		border-radius:15px;
+		margin-top:30px;
+	}
+	.p-massage{
+		font-size: 17px;
+		font-weight: 600;
+	}
+	.middle-box{
+		display:flex;
+	}
+</style>
 </head>
 <body>
-<button>
-	<h8>장바구니</h8><br>
-</button>
+	<div class="container">
+		<div class="top-price">
+			<span class="basket">장바구니에 들어 있는 제품입니다 ₩1,090,000.</span>
+			<div  class="service-box">모든 주문에 무료 배송 서비스가 제공됩니다.</div>
+			<button type="submit" class="btn btn-primary col-12">결재</button>
+		</div>
+		<hr>
+		<div class="middle-box">
+		<c:forEach items="${list}" var="pr">
+			<div class="ipad">
+				<div class="ipad-img-box">
+					<img class="ipad-img" src="${pr.pr_img_url}">						
+				</div>
+				<span>${pr.pr_name}</span><br>
+				<span>₩${pr.pr_price_str}부터</span>
+				<hr>
+				<div class="buy and search">
+					<a href="#" class="buy">구입하기</a>
+					<a href="<%=request.getContextPath()%>/cart/reg?pr_num=${pr.pr_num}" class="search">더 알아보기</a>
+				</div>					
+			</div>
+		</c:forEach>
+			<img alt="" src="">qweqwe3333
+			<div class="">
+				<div class="">
+					1
+				</div>
+				<hr>
+				<div class="">
+					1
+				</div>
+				<hr>
+				<div class="">
+					<span class="p-maasage">선물 메세지 또는 선물 포장 추가</span>
+				</div>
+				<hr>
+				<div class="">
+					<div>
+						<span>이 제품을 얼마나 빨리 받을 수 있는지 확인해보십시오.</span><a>우편번호 입력</a>
+					</div>
+					<div>
+						<div>
+							<div>
+								<img alt="" src="">
+							</div>							
+							<span>오늘주문 시, 배송:</span><br>
+							<span>2021/00/00 - 무료 배송</span>
+						</div>
+						<div>
+							<img alt="" src="">
+							<span>가까운 Apple Store에서 픽업하십시오.</span>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<div>
+				<span>소계</span>
+				<span>₩금액</span>
+			</div>
+			<div>
+				<span>배송</span>
+				<span>무료</span>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<div>
+				<span>총계</span>
+				<span>₩금액</span>
+				<span>₩금액 의 VAT포함</span>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -62,7 +62,7 @@
 						<hr>
 						<div class="buy and search">
 							<a href="#" class="buy">구입하기</a>
-							<a href="#" class="search">더 알아보기</a>
+							<a href="<%=request.getContextPath()%>/cart/reg?pr_num=${pr.pr_num}" class="search">더 알아보기</a>
 						</div>					
 					</div>
 				</c:forEach>

@@ -96,7 +96,12 @@ public class HomeController {
 		return mv;
 	}
     @RequestMapping(value = "/Cart", method = RequestMethod.GET)
-	public ModelAndView CartGet(ModelAndView mv) {
+	public ModelAndView CartGet(ModelAndView mv,HttpServletRequest request) {
+    	UserVo user=(UserVo)request.getSession().getAttribute("user");
+    	String us_email = user.getUs_email();
+    	ArrayList<ProductVo> list = productService.getBasketList(us_email);
+    	System.out.println(list);
+    	mv.addObject("list", list);
 		mv.setViewName("/main/Cart");
 		return mv;
 	}
@@ -151,4 +156,14 @@ public class HomeController {
 		}
 		return "no";
 	}
+//	@RequestMapping(value = "cart/reg", method = RequestMethod.POST)
+//	public ModelAndView cartPOST(ModelAndView mv, UserVo user){
+//		boolean signup = userService.signup(user);
+//		if(signup) {
+//			mv.setViewName("redirect:/");
+//		}else {
+//			mv.setViewName("redirect:/cart");
+//		}
+//		return mv;
+//	}
 }

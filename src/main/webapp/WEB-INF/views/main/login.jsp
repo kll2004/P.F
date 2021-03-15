@@ -30,9 +30,6 @@
 		font-size:24px;
 		font-weight:600
 	}
-	.id-login-gest-sub{
-		
-	}
 	.login-main-box{
 		display:flex;
 		margin:0 auto;

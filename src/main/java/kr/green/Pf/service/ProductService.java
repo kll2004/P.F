@@ -8,5 +8,6 @@ public interface ProductService {
 
 	ArrayList<ProductVo> getProductList(String category);
 	ProductVo getProduct(String category);
+	ArrayList<ProductVo> getBasketList(String us_email);
 
 }

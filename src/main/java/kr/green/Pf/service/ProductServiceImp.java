@@ -21,4 +21,8 @@ public class ProductServiceImp implements ProductService {
 	public ProductVo getProduct(String category) {
 		return productDao.getProduct(category);
 	}
+	@Override
+	public ArrayList<ProductVo> getBasketList(String us_email) {
+		return productDao.getBasketList(us_email);
+	}
 }

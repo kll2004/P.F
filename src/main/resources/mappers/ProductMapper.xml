@@ -9,4 +9,8 @@
   <select id="getProduct" resultType="kr.green.Pf.vo.ProductVo">
     select * from pr where pr_num = #{pr_num}
   </select>
+  <select id="getBasketList" resultType="kr.green.Pf.vo.ProductVo">
+    SELECT * FROM pf.basket join pr on pr.pr_num = basket.bs_pr_num where bs_us_email = #{us_email}
+  </select>
+  
 </mapper>
