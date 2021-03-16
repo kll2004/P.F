@@ -31,46 +31,40 @@
 	.middle-box{
 		display:flex;
 	}
+	.product-img{
+		width: 170px;
+		height: 200px;
+		margin-right:50px;
+	}
 </style>
 </head>
 <body>
 	<div class="container">
+		<c:if test="${list.size() != 0 }">
 		<div class="top-price">
-			<span class="basket">장바구니에 들어 있는 제품입니다 ₩1,090,000.</span>
+			<span class="basket">장바구니에 들어 있는 제품입니다. ₩${totalMoney}.</span>
 			<div  class="service-box">모든 주문에 무료 배송 서비스가 제공됩니다.</div>
 			<button type="submit" class="btn btn-primary col-12">결재</button>
 		</div>
 		<hr>
-		<div class="middle-box">
 		<c:forEach items="${list}" var="pr">
-			<div class="ipad">
-				<div class="ipad-img-box">
-					<img class="ipad-img" src="${pr.pr_img_url}">						
+		<div class="middle-box">			
+				<div class="product">
+					<div class="product-img-box">
+						<img class="product-img" src="${pr.pr_img_url}">						
+					</div>				
 				</div>
-				<span>${pr.pr_name}</span><br>
-				<span>₩${pr.pr_price_str}부터</span>
-				<hr>
-				<div class="buy and search">
-					<a href="#" class="buy">구입하기</a>
-					<a href="<%=request.getContextPath()%>/cart/reg?pr_num=${pr.pr_num}" class="search">더 알아보기</a>
-				</div>					
-			</div>
-		</c:forEach>
-			<img alt="" src="">qweqwe3333
-			<div class="">
-				<div class="">
-					1
+			<div class="middle-r">
+				<div class="middle-r-top">
+					<span>${pr.pr_name}</span><br>
+					<span>₩${pr.pr_price_str}</span>
 				</div>
 				<hr>
-				<div class="">
-					1
-				</div>
-				<hr>
-				<div class="">
+				<div class="middle-r-mid">
 					<span class="p-maasage">선물 메세지 또는 선물 포장 추가</span>
 				</div>
 				<hr>
-				<div class="">
+				<div class="middle-r-row">
 					<div>
 						<span>이 제품을 얼마나 빨리 받을 수 있는지 확인해보십시오.</span><a>우편번호 입력</a>
 					</div>
@@ -88,8 +82,9 @@
 						</div>
 					</div>				
 				</div>
-			</div>
+			</div>			
 		</div>
+		</c:forEach>		
 		<hr>
 		<div>
 			<div>
@@ -109,6 +104,10 @@
 				<span>₩금액 의 VAT포함</span>
 			</div>
 		</div>
+		</c:if>
+		<c:if test="${list.size() == 0 }">
+			<h1>장바구니 목록이 없습니다.</h1>
+		</c:if>
 	</div>
 </body>
 </html>
