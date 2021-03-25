@@ -28,6 +28,7 @@
 		width:30%;
 		border-radius:15px;
 		margin-top:30px;
+		margin-bottom:30px;
 	}
 	.p-massage{
 		font-size: 17px;
@@ -132,7 +133,7 @@
 		margin-left:25%;
 	}
 	.vat-box{
-		display:flex;
+		display:block;
 		margin-bottom:10px;
 		padding-right:20px;
 		font-size: 17px;
@@ -159,7 +160,7 @@
 		border-radius:15px;
 		margin-top:30px;
 		margin-bottom:100px;
-		align:center;
+		align:right;
 	}
 </style>
 </head>
@@ -208,9 +209,9 @@
 		</div>
 		</c:forEach>		
 		<div class="price-vat-box">
-			<div class="vat-box">
+			<div class="vat-box after">
 				<span class="price-total">소계</span>
-				<span class="total-price">₩${totalMoney}.</span>
+				<span class="total-price">₩${totalMoney}</span>
 			</div>
 			<div class="vat-box">
 				<span class="free-post">배송</span>
@@ -224,7 +225,9 @@
 		<button class="price-button">결재</button>
 		</c:if>
 		<c:if test="${list.size() == 0 }">
-			<h1>장바구니 목록이 없습니다.</h1>
+			<span class="basket">장바구니에 목록이 없습니다.</span>
+			<div  class="service-box">모든 주문에 무료 배송 서비스가 제공됩니다.</div>
+			<a href="http://localhost:8080/Pf/login"><button class="btn btn-primary col-12">로그인 페이지 이동</button></a>
 		</c:if>
 	</div>
 </body>

@@ -4,14 +4,31 @@
 <html>
 <head>
 	<style>
-		.container{
-			text-align : center;
+		body{
+			text-align: center;
+		}
+		.top-main{
+			background-color:#f2f2f2;
+			padding-top: 50px;
+			text-align: left;			
+		}
+		.top-main-sub{
+			margin-left:auto;
+			margin-right: auto;
+		}
+		.top-box{
+			margin-bottom:60px;
+			padding-bottom: 60px;
+			text-align: center;
+		}
+		.you-mac{
+			font-weight: 600;
+			font-size: 60px;			
 		}
 		.imac{
-			display: block;
+			padding-bottom: 30px;
+			
 			width:25%;
-			text-align: center;
-			margin-top: 20px;
 			float:left;
 		}
 		.ac{
@@ -20,14 +37,10 @@
 			text-align: center;
 		}
 		.imac-img-box{
-			width:200px;
-			height:120px;
-			display: inline-block;
-			vertical-align : top;
-			margin-right : 20px;
-			margin-left: 20px;
+			width:100%;
+			height:50%;
 		}
-		.macbook-air{
+		.macbook{
 			width:200px;
 			height:120px;
 			display: block;
@@ -38,37 +51,35 @@
 		.buy{
 			margin-right: 5px;
 		}
+		.bottom{
+			margin-top:30px;
+		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="top">
+	<div class="top-main">
+		<div class="top-main-sub">
 			<div class="top-box">
-				<h1 style="font-size: 56px">당신에게 맞는<br>Mac 노트북은?</h1>
-			</div>
-			<a href="https://www.apple.com/kr/mac/compare/">
+				<h1 class="you-mac">당신에게 맞는<br>Mac 노트북은?</h1>
+				<a href="https://www.apple.com/kr/mac/compare/">
 				<h5>모든 Mac 모델 비교하기</h5>
-			</a>
-		</div>
-		<div class="mid" style="background-color : #f2f2f2">
-			<div class="container">
-				<c:forEach items="${list}" var="pr">
-				<div class="imac">
-					<div class="imac-img-box">
-						<img class="macbook-air" src="${pr.pr_img_url}">						
-					</div>
-					<span>${pr.pr_name}</span><br>
-					<span>₩${pr.pr_price_str}부터</span>
-					<hr>
-					<div class="buy and search">
-						<a href="#" class="buy">구입하기</a>
-						<a href="#" class="search">더 알아보기</a>
-					</div>					
+			</a>	
+			</div>			
+			<c:forEach items="${list}" var="pr">
+			<div class="imac">
+				<div class="imac-img-box">
+					<img class="macbook" src="${pr.pr_img_url}">						
 				</div>
-				</c:forEach>
-			</div>
+				<span>${pr.pr_name}</span><br>
+				<span>₩${pr.pr_price_str}부터</span>
+				<div class="buy and search">
+					<a href="#" class="buy">구입하기</a>
+					<a href="#" class="search">더 알아보기</a>
+				</div>					
+			</div>	
+			</c:forEach>	
 		</div>
-		<hr>
+	</div>	
 		<div class="bottom">
 			<div class="container flex">
 				<div class="container">
@@ -81,7 +92,7 @@
 						<img class="ac" src="https://www.apple.com/v/ipad/home/bk/images/overview/accessories__d6ltr7n1knyq_small.jpg">						
 					</div>					
 				</div>
-				<div class="container"  href="#">
+				<div class="container">
 					<h3 class="promo-headline typography-promo-headline">자신만의 이야기를 새기다.</h3>
 					<p>AirPods을 위한 새로운 각인 옵션.글자, 이모티콘, 숫자 조합으로 더욱 개성 있게.</p>
 					<div class="#">
@@ -93,8 +104,6 @@
 				</div>
 			</div>
 		</div>
-		<hr>
-	</div>
 </body>
 <footer>
 </footer>

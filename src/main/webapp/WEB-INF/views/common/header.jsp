@@ -13,7 +13,7 @@
 		display : flex;
 	}
 	.i-img{
-		height :  53px;
+		height : 53px;
 		width : 53px;
 		text-align : center;		
 	}
@@ -51,6 +51,11 @@
 		content: '';
 		clear: both;
 	}
+	.search-icon{
+		width:25px;
+		height:25px;
+		color : #f5f5f7;
+	}
 </style>
 <meta charset="UTF-8">
 </head>
@@ -81,7 +86,7 @@
 		      	</li>
 	      		<li>
 		        	<a class="font3" href="<%=request.getContextPath()%>/Search">
-     	        		<img class="i-img" src="https://www.apple.com/ac/globalnav/6/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg">
+     	        		<img class="search-icon" src="https://km.support.apple.com/etc/designs/support/publish/commons/ac-assets/ac-toolkit/images/svg/search_icon_black.svg">
 		        	</a>
 		      	</li>
 		      	<li>
@@ -164,18 +169,6 @@
 						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/pro_display_xdr_dark__e7t43sqe6ryq_large.svg"><br>
 						<span class="a">
 							<span class="font">Pro Display XDR</span><br>		
-						</span>		
-					</a>
-					<a class="icon-box" href="#">
-						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/mac_acc_dark__eurzg3vwrjue_large.svg")><br>
-						<span class="a">
-							<span class="font">액세서리</span><br>		
-						</span>		
-					</a>
-					<a class="icon-box" href="#">
-						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/mac_osx_dark__b5amo7texir6_large.svg"><br>
-						<span class="a">
-							<span class="font">Big Sur</span><br>		
 						</span>		
 					</a>
 				</div>
