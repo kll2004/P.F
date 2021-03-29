@@ -26,10 +26,10 @@
 			font-size: 60px;			
 		}
 		.imac{
-			padding-bottom: 30px;
-			
+			padding-bottom: 30px;			
 			width:25%;
 			float:left;
+			text-align: center;
 		}
 		.ac{
 			display: block;
@@ -38,7 +38,6 @@
 		}
 		.imac-img-box{
 			width:100%;
-			height:50%;
 		}
 		.macbook{
 			width:200px;

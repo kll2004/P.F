@@ -27,35 +27,6 @@
 		font-size:40px;
 		font-weight:600;		
 	}
-	.search-box{
-		max-width:654px;
-		margin-top:30px;
-		margin-right:auto;
-		margin-left:auto;
-		width: 100%;
-		position: relative;
-	}
-	.link.row{
-		margin-right:auto;
-		margin-left:auto;
-		width: 100%;
-		border:1px solid #dedede;
-		border-radius:0 0 6px 6px;
-	    display: none;
-	    max-height: 1000px;
-	    padding:40px;
-	    
-	}
-	.search-box-help{
-		width:100%;
-		height: 50px;
-		padding-right:35px;
-		font-weight: 300;
-		border-radius:10px;
-		color:#333;
-		border:1px solid #dedede;
-		padding-left:50px;
-	}
 	.categori{
 		padding-top:50px;
 		max-width:1000px;
@@ -105,8 +76,37 @@
 	}
 	.search-rink{
 	    color: #333;
-	    padding: 6px 5px 6px 0px;
-	    font-
+	}
+	.choice-bar{
+	    padding: 6px 5px 6px;
+	}
+	.search-box{
+		max-width:654px;
+		margin-top:30px;
+		margin-right:auto;
+		margin-left:auto;
+		width: 100%;
+		position: relative;
+	}
+	.row-link{
+		margin-right:auto;
+		margin-left:auto;
+		width: 100%;
+		border:1px solid #dedede;
+		border-radius:0 0 6px 6px;
+	    display: none;
+	    max-height: 1000px;
+	    padding:40px;	    
+	}
+	.search-box-help{
+		width:100%;
+		height: 50px;
+		padding-right:35px;
+		font-weight: 300;
+		border-radius:10px;
+		color:#333;
+		border:1px solid #dedede;
+		padding-left:50px;
 	}
 </style>
 </head>
@@ -120,15 +120,15 @@
 		<div class="search-box">
 			<input class="search-box-help" placeholder="지원 검색하기">
 			<button class="search-button"></button>		
-			<div class="row link">
+			<div class="row-link">
 				<ul>
-				<span class="past-rink">빠른 링크</span>
-					<li><a class="search-rink" href="#">Apple ID암호를 잊어버린 경우</a></li>
-					<li><a class="search-rink" href="#">iPhone, iPad의 암호를 잊어버렸거나 기기가 비활성화된 경우</a></li>
-					<li><a class="search-rink" href="#">구독 조회, 변경 또는 취소하기</a></li>
-					<li><a class="search-rink" href="#">iPhone, iPad 또는 iPod touch 업데이트하기</a></li>
-					<li><a class="search-rink" href="#">문의하기 Apple 지원</a></li>
-				</ul>
+			<span class="past-rink">빠른 링크</span>
+				<li class="choice-bar"><a class="search-rink" href="#">Apple ID암호를 잊어버린 경우</a></li>
+				<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad의 암호를 잊어버렸거나 기기가 비활성화된 경우</a></li>
+				<li class="choice-bar"><a class="search-rink" href="#">구독 조회, 변경 또는 취소하기</a></li>
+				<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad 또는 iPod touch 업데이트하기</a></li>
+				<li class="choice-bar"><a class="search-rink" href="#">문의하기 Apple 지원</a></li>
+			</ul>
 			</div>	
 		</div>
 		<div class="categori">
@@ -156,10 +156,10 @@
 	</div>
 	<script type="text/javascript">
 		$('.search-box-help').focus(function(){
-			$(this).siblings('.row').show();
+			$(this).siblings('.row-link').show();
 		})
 		$('.search-box-help').blur(function(){
-			$(this).siblings('.row').hide();
+			$(this).siblings('.row-link').hide();
 		})
 	</script>
 </body>

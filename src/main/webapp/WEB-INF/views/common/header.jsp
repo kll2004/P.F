@@ -51,10 +51,64 @@
 		content: '';
 		clear: both;
 	}
+	.search-box{
+		max-width:654px;
+		margin-right:auto;
+		margin-left:auto;
+		width: 100%;
+		position: relative;
+		display: none;
+		margin-top:30px;
+		margin-bottom:30px;
+	}
+	.row-link{
+		margin-right:auto;
+		margin-left:auto;
+		width: 100%;
+		border:1px solid #dedede;
+		border-radius:0 0 6px 6px;
+	    display: none;
+	    max-height: 1000px;
+	    padding:40px;	    
+	}
+	.search-box-help{
+		width:100%;
+		height: 50px;
+		padding-right:35px;
+		font-weight: 300;
+		border-radius:10px;
+		color:#333;
+		border:1px solid #dedede;
+		padding-left:50px;
+	}
+	.search-button{
+		width:40px;
+		height: 44px;
+		background-image: url(https://km.support.apple.com/etc/designs/support/publish/commons/ac-assets/ac-toolkit/images/svg/search_icon_black.svg);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		border: none;
+		background-color: #fff;
+		border-radius: 10px;
+	    background-repeat: no-repeat;
+	    background-size: 24px;
+	    background-position: 12px 66%;
+	    opacity: 0.4;
+	    cursor: default;
+	    outline: none;
+	}
+	.past-rink{
+		font-weight:600;
+	}
+	.search-rink{
+	    color: #333;
+	}
+	.choice-bar{
+	    padding: 6px 5px 6px;
+	}
 	.search-icon{
-		width:25px;
-		height:25px;
-		color : #f5f5f7;
+		color: #fff;
 	}
 </style>
 <meta charset="UTF-8">
@@ -84,9 +138,9 @@
 		      	<li>
 		        	<a class="font3" href="<%=request.getContextPath()%>/Support">고객지원</a>
 		      	</li>
-	      		<li>
-		        	<a class="font3" href="<%=request.getContextPath()%>/Search">
-     	        		<img class="search-icon" src="https://km.support.apple.com/etc/designs/support/publish/commons/ac-assets/ac-toolkit/images/svg/search_icon_black.svg">
+	      		<li id="searchBtn">
+		        	<a class="font3">
+     	        		<img class="search-icon" src="https://km.support.apple.com/etc/designs/support/publish/commons/ac-assets/ac-toolkit/images/svg/search_icon_black.svg">    	        		
 		        	</a>
 		      	</li>
 		      	<li>
@@ -109,7 +163,7 @@
 		      	</c:if>
 			</ul>
 		</nav>
-	</div>
+	</div>	
 	<c:if test="${type == 'Mac' }">
 		<div style="background-color : #1d1d1f;">
 			<div class="container">
@@ -385,5 +439,31 @@
 			</div>
 		</div>
 	</c:if>
+	<div class="search-box">
+		<input class="search-box-help" placeholder="지원 검색하기">
+		<button class="search-button"></button>		
+		<div class="row-link">
+			<ul>
+		<span class="past-rink">빠른 링크</span>
+			<li class="choice-bar"><a class="search-rink" href="#">Apple ID암호를 잊어버린 경우</a></li>
+			<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad의 암호를 잊어버렸거나 기기가 비활성화된 경우</a></li>
+			<li class="choice-bar"><a class="search-rink" href="#">구독 조회, 변경 또는 취소하기</a></li>
+			<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad 또는 iPod touch 업데이트하기</a></li>
+			<li class="choice-bar"><a class="search-rink" href="#">문의하기 Apple 지원</a></li>
+		</ul>
+		</div>	
+	</div>
+	<script type="text/javascript">
+		$('.search-box-help').focus(function(){
+			$(this).siblings('.row-link').show();
+		})
+		$('.search-box-help').blur(function(){
+			$(this).siblings('.row-link').hide();
+		})
+		$('#searchBtn').click(function(){
+			console.log(1)
+			$('.search-box').toggle();
+		})
+	</script>
 </body>
 </html>

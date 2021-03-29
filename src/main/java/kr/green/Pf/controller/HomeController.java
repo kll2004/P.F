@@ -95,13 +95,6 @@ public class HomeController {
 		mv.setViewName("/main/Support");
 		return mv;
 	}
-    @RequestMapping(value = "/Search", method = RequestMethod.GET)
-    /*	
-     * */
-	public ModelAndView SearchGet(ModelAndView mv) {
-		mv.setViewName("/main/Search");
-		return mv;
-	}
     @RequestMapping(value = "/Cart", method = RequestMethod.GET)
 	public ModelAndView CartGet(ModelAndView mv,HttpServletRequest request) {
     	/* 회원이 로그인을 하면 세션이라는 곳에 회원 정보가 저장이 된다.
@@ -172,8 +165,7 @@ public class HomeController {
 		request.getSession().removeAttribute("user");
 		mv.setViewName("redirect:/");
 		return mv;
-	}
-	
+	}	
 	@RequestMapping(value = "/dup", method = RequestMethod.POST)
 	@ResponseBody
 	public String dupGet(String id) {
@@ -183,14 +175,4 @@ public class HomeController {
 		}
 		return "no";
 	}
-//	@RequestMapping(value = "cart/reg", method = RequestMethod.POST)
-//	public ModelAndView cartPOST(ModelAndView mv, UserVo user){
-//		boolean signup = userService.signup(user);
-//		if(signup) {
-//			mv.setViewName("redirect:/");
-//		}else {
-//			mv.setViewName("redirect:/cart");
-//		}
-//		return mv;
-//	}
 }
