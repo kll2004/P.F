@@ -51,7 +51,7 @@
 		font-weight: 400;
 		color:#333;
 	}
-	.search-button{
+	.search-button2{
 		width:40px;
 		height: 44px;
 		background-image: url(https://km.support.apple.com/etc/designs/support/publish/commons/ac-assets/ac-toolkit/images/svg/search_icon_black.svg);
@@ -68,19 +68,19 @@
 	    cursor: default;
 	    outline: none;
 	}
-	.search-button:focus {
+	.search-button2:focus {
 		outline: none;
 	}
-	.past-rink{
+	.past-rink2{
 		font-weight:600;
 	}
-	.search-rink{
+	.search-rink2{
 	    color: #333;
 	}
-	.choice-bar{
+	.choice-bar2{
 	    padding: 6px 5px 6px;
 	}
-	.search-box{
+	.search-box2{
 		max-width:654px;
 		margin-top:30px;
 		margin-right:auto;
@@ -88,7 +88,7 @@
 		width: 100%;
 		position: relative;
 	}
-	.row-link{
+	.row-link2{
 		margin-right:auto;
 		margin-left:auto;
 		width: 100%;
@@ -98,7 +98,7 @@
 	    max-height: 1000px;
 	    padding:40px;	    
 	}
-	.search-box-help{
+	.search-box-help2{
 		width:100%;
 		height: 50px;
 		padding-right:35px;
@@ -117,17 +117,17 @@
 				<span class="welcome">Apple 지원에 오신 것을 환영합니다</span>
 			</div>
 		</div>		
-		<div class="search-box">
-			<input class="search-box-help" placeholder="지원 검색하기">
-			<button class="search-button"></button>		
-			<div class="row-link">
+		<div class="search-box2">
+			<input class="search-box-help2" placeholder="지원 검색하기">
+			<button class="search-button2"></button>		
+			<div class="row-link2">
 				<ul>
-			<span class="past-rink">빠른 링크</span>
-				<li class="choice-bar"><a class="search-rink" href="#">Apple ID암호를 잊어버린 경우</a></li>
-				<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad의 암호를 잊어버렸거나 기기가 비활성화된 경우</a></li>
-				<li class="choice-bar"><a class="search-rink" href="#">구독 조회, 변경 또는 취소하기</a></li>
-				<li class="choice-bar"><a class="search-rink" href="#">iPhone, iPad 또는 iPod touch 업데이트하기</a></li>
-				<li class="choice-bar"><a class="search-rink" href="#">문의하기 Apple 지원</a></li>
+			<span class="past-rink2">빠른 링크</span>
+				<li class="choice-bar2"><a class="search-rink2" href="#">Apple ID암호를 잊어버린 경우</a></li>
+				<li class="choice-bar2"><a class="search-rink2" href="#">iPhone, iPad의 암호를 잊어버렸거나 기기가 비활성화된 경우</a></li>
+				<li class="choice-bar2"><a class="search-rink2" href="#">구독 조회, 변경 또는 취소하기</a></li>
+				<li class="choice-bar2"><a class="search-rink2" href="#">iPhone, iPad 또는 iPod touch 업데이트하기</a></li>
+				<li class="choice-bar2"><a class="search-rink2" href="#">문의하기 Apple 지원</a></li>
 			</ul>
 			</div>	
 		</div>
@@ -155,11 +155,11 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		$('.search-box-help').focus(function(){
-			$(this).siblings('.row-link').show();
+		$('.search-box-help2').focus(function(){
+			$(this).siblings('.row-link2').show();
 		})
-		$('.search-box-help').blur(function(){
-			$(this).siblings('.row-link').hide();
+		$('.search-box-help2').blur(function(){
+			$(this).siblings('.row-link2').hide();
 		})
 	</script>
 </body>

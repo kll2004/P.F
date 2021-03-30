@@ -12,6 +12,14 @@
 		.container{
 			text-align : center;
 		}
+		.top,.mid{
+			padding-top: 60px;
+			padding-bottom: 30px;
+		}
+		.bottom{
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
 		.flex{		
 			display : flex;
 		}		
@@ -33,14 +41,13 @@
 <body style="background-color : #f2f2f2">
 	<div class="contain">
 		<div class="top">
-			<div class="top" margin-top="56px">
+			<div class="your-font" margin-top="56px">
 				<h1 style="font-size: 56px">당신에게 알맞은 Apple Watch는?</h1>
 			</div>
-			<a href="https://www.apple.com/kr/mac/compare/">
+			<a href="https://www.apple.com/kr/watch/compare/">
 				<h5>전체 모델 비교하기</h5>
 			</a>
 		</div>
-		<hr>
 		<div class="mid">
 			<div class="container flex">
 				<c:forEach items="${list}" var="pr">
@@ -50,16 +57,14 @@
 					</div>
 					<span>${pr.pr_name}</span><br>
 					<span>₩${pr.pr_price_str}부터</span>
-					<hr>
 					<div class="buy and search">
-						<a class="buy">구입하기</a>
+						<a href="<%=request.getContextPath() %>/buy?num=${pr.pr_num}" class="buy">구입하기</a>
 						<a class="search">더 알아보기</a>
 					</div>					
 				</div>
 				</c:forEach>
 			</div>
 		</div>
-		<hr>
 		<div class="bottom">
 			<div class="container flex">
 				<div class="container" style="background-color : #fafafa">
@@ -84,7 +89,6 @@
 				</div>
 			</div>
 		</div>
-		<hr>
 	</div>
 </body>
 </html>

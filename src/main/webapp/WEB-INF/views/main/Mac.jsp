@@ -10,15 +10,11 @@
 		.top-main{
 			background-color:#f2f2f2;
 			padding-top: 50px;
-			text-align: left;			
-		}
-		.top-main-sub{
-			margin-left:auto;
-			margin-right: auto;
+			text-align : center;		
 		}
 		.top-box{
-			margin-bottom:60px;
-			padding-bottom: 60px;
+			margin-bottom:30px;
+			padding-bottom: 30px;
 			text-align: center;
 		}
 		.you-mac{
@@ -38,11 +34,11 @@
 		}
 		.imac-img-box{
 			width:100%;
+			text-align: center;
 		}
 		.macbook{
 			width:200px;
 			height:120px;
-			display: block;
 		}
 		.flex{		
 			display : flex;
@@ -51,7 +47,7 @@
 			margin-right: 5px;
 		}
 		.bottom{
-			margin-top:30px;
+			margin-top:60px;
 		}
 	</style>
 </head>
@@ -62,21 +58,23 @@
 				<h1 class="you-mac">당신에게 맞는<br>Mac 노트북은?</h1>
 				<a href="https://www.apple.com/kr/mac/compare/">
 				<h5>모든 Mac 모델 비교하기</h5>
-			</a>	
-			</div>			
-			<c:forEach items="${list}" var="pr">
-			<div class="imac">
-				<div class="imac-img-box">
-					<img class="macbook" src="${pr.pr_img_url}">						
-				</div>
-				<span>${pr.pr_name}</span><br>
-				<span>₩${pr.pr_price_str}부터</span>
-				<div class="buy and search">
-					<a href="#" class="buy">구입하기</a>
-					<a href="#" class="search">더 알아보기</a>
-				</div>					
+			</a>
 			</div>	
-			</c:forEach>	
+			<div class="container flex">		
+				<c:forEach items="${list}" var="pr">
+				<div class="imac">
+					<div class="imac-img-box">
+						<img class="macbook" src="${pr.pr_img_url}">						
+					</div>
+					<span>${pr.pr_name}</span><br>
+					<span>₩${pr.pr_price_str}부터</span>
+					<div class="buy and search">
+						<a href="<%=request.getContextPath() %>/buy?num=${pr.pr_num}" class="buy">구입하기</a>
+						<a href="#" class="search">더 알아보기</a>
+					</div>					
+				</div>	
+				</c:forEach>
+			</div>	
 		</div>
 	</div>	
 		<div class="bottom">

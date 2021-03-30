@@ -68,8 +68,9 @@
 					<span class="t1">iPhone12</span><br>
 					<span class="t2">가격은 ₩950,000부터</span>
 				</div>
-				<div class="buy-box">
-					<a href="http://localhost:8080/Pf/iPhone">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
+				<div class="buy-box">					
+					<a href="http://localhost:8080/Pf/iPhone">더 알아보기</a>&nbsp;&nbsp;&nbsp;		
+					<a href="<%=request.getContextPath() %>/buy?num=iphone002" class="buy">구입하기</a>			
 				</div>
 			</div>
 		</div>
@@ -80,7 +81,8 @@
 					<span class="t2">가격은 ₩1,350,000부터</span>
 				</div>
 				<div class="buy-box">
-					<a href="http://localhost:8080/Pf/iPhone">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
+					<a href="http://localhost:8080/Pf/iPhone">더 알아보기</a>&nbsp;&nbsp;&nbsp;	
+					<a href="<%=request.getContextPath() %>/buy?num=iphone001" class="buy">구입하기</a>			
 				</div>
 			</div>
 		</div>
@@ -90,7 +92,8 @@
 					<span class="t1">iPad Air</span><br>
 				</div>
 				<div class="buy-box">
-					<a href="http://localhost:8080/Pf/iPad">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
+					<a href="http://localhost:8080/Pf/iPad">더 알아보기</a>&nbsp;&nbsp;&nbsp;
+					<a href="<%=request.getContextPath() %>/buy?num=ipad002" class="buy">구입하기</a>
 				</div>
 			</div>
 		</div>
@@ -100,7 +103,8 @@
 					<span class="t1" style="color : #f5f5f7">MacBook Air</span><br>
 				</div>
 				<div class="buy-box">
-					<a href="http://localhost:8080/Pf/Mac">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
+					<a href="http://localhost:8080/Pf/Mac">더 알아보기</a>&nbsp;&nbsp;&nbsp;
+					<a href="<%=request.getContextPath() %>/buy?num=imac001" class="buy">구입하기</a>
 				</div>
 			</div>
 		</div>
@@ -111,7 +115,8 @@
 					<span style="color : #f5f5f7">건강의 미래는 당신의 손목에 있습니다.</span>
 				</div>
 				<div class="buy-box">
-					<a href="http://localhost:8080/Pf/Watch">더 알아보기</a>&nbsp;&nbsp;&nbsp;<a class="">구매</a>
+					<a href="http://localhost:8080/Pf/Watch">더 알아보기</a>&nbsp;&nbsp;&nbsp;
+					<a href="<%=request.getContextPath() %>/buy?num=Watch001" class="buy">구입하기</a>
 				</div>
 			</div>
 		</div>

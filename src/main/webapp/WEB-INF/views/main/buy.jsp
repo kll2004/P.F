@@ -30,6 +30,9 @@
 		width:33.33333%;
 		float: left;
 	}
+	.buy-right{
+		padding-bottom: 50px;
+	}
 	.buy-right,.buy-left{
 		margin-top: 50px;
 	}
@@ -74,26 +77,24 @@
 				</li>
 			</ul>
 			<div class="call">
-				<span>구입과 관련해 궁금한 점이 있으신가요?<a>전문가와 상담하세요.</a></span>
+				<span>구입과 관련해 궁금한 점이 있으신가요? <a class="#">전문가와 상담하세요.</a></span>
 			</div>
 		</div>
 		<div class="buy-right">
 			<div class="buy-right-box">
 				<div class="buy-right-title">
-					<p class="main-title">MacBook Air - 스페이스 그레이 맞춤 구성하기</p>
+					<p class="main-title">${pr.pr_name}</p>
 					<span>8GB 통합 메모리</span>
 					<span>256GB SSD 저장 장치</span>
 					<span>Force Touch 트랙패드</span><br>
 					<a href="#">Apple M1 칩에 대해 더 알아보기</a>
 				</div>
-				<hr>
 				<div class="buy-right-memory">
 					<span class="sub-title">메모리</span><br>
 					<a>나에게 알맞은 메모리 용량은 무엇일까요?</a>
 					<div class="c-box">8GB 통합 메모리</div>
 					<div class="c-box">16GB 통합 메모리</div>
 				</div>
-				<hr>
 				<div class="buy-right-GB">
 				<span class="sub-title">저장장치</span><br>
 				<a>나에게 알맞은 저장 장치는 무엇일까요?</a>
@@ -102,13 +103,12 @@
 					<div class="c-box">1TB SSD 저장 장치</div>
 					<div class="c-box">2TB SSD 저장 장치</div>
 				</div>
-				<hr>
 				<div class="buy-right-keyboard">
 					<span class="sub-title">키보드 언어</span><br>
 					<a href="#">더 알아보기</a>
 					<div>키보드언어</div>
 				</div>
-				<div class="">
+				<div class="buy-right-app">
 					<span>사전 설치된 소프트웨어</span>
 					<span>교육용 프로 앱 번들</span>
 					<a>교육용 프로 앱 번들<br><a href="#">더 알아보기</a>(교육용 프로 앱 번들)</a>

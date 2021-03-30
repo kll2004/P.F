@@ -5,6 +5,9 @@
 <html>
 <head>
 <style>
+	.ipad-head{
+		margin-top:15px;
+	}
 	.menu{
 		text-align : center;
 		background-color : #1d1d1f;
@@ -168,27 +171,27 @@
 		<div style="background-color : #1d1d1f;">
 			<div class="container">
 				<div class="container">
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=imac001">
 						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/macbookair_dark__tjyfqhu5ttmy_large.svg"><br>
 						<span class="a">
 							<span class="font">MacBook Air</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=imac002">
 						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/macbook_pro_13_dark__bc7b3ck4iyxe_large.svg"><br>
 						<span class="a">
 							<span class="font">MacBook Pro 13형</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=imac003">
 						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/macbook_pro_16_dark__bmlfrmq2ocfm_large.svg"><br>
 						<span class="a">
 							<span class="font">MacBook Pro 16형</span><br>		
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=imac004">
 						<img class="i-img" src="https://www.apple.com/v/mac/home/ba/images/familybrowser/imac_pro_dark__fqja4mbg00ae_large.svg"><br>
 						<span class="a">
 							<span class="font">iMac</span><br>		
@@ -230,30 +233,30 @@
 		</div>
 	</c:if>	
 	<c:if test="${type == 'iPad' }">
-		<div style="background-color : #ffffff;">
+		<div class="ipad-head" style="background-color : #ffffff;">
 			<div class="container">
 				<div class="container">
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipad001">
 						<img class="i-img" src="https://www.apple.com/v/ipad/home/bk/images/chapternav/ipadpro_light__b2axwqwl0seq_large.svg"><br>
 						<span class="a">
 							<span class="font2">iPad Pro</span><br>		
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipad002">
 						<img class="i-img" src="https://www.apple.com/v/ipad/home/bk/images/chapternav/ipadair_light__bxa7031ri76u_large.svg"><br>
 						<span class="a">
 							<span class="font2">iPad Air</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipad003">
 						<img class="i-img" src="https://www.apple.com/v/ipad/home/bk/images/chapternav/ipad_light__jyjgim3zp16q_large.svg"><br>
 						<span class="a">
 							<span class="font2">iPad</span><br>	
 							<span class="new">new</span>								
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipad004">
 						<img class="i-img" src="https://www.apple.com/v/ipad/home/bk/images/chapternav/ipadmini_light__gkq0aptdyw2m_large.svg"><br>
 						<span class="a">
 							<span class="font2">iPad mini</span><br>		
@@ -303,27 +306,27 @@
 		<div style="background-color : #1d1d1f;">
 			<div class="container">
 				<div class="container">
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone001">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_12_pro_dark__c1xodf0hb1w2_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 12 Pro</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone002">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_12_dark__d7asodlag7e6_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 12</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone003">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_se_dark__b1b8q1iya5o2_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone SE</span><br>		
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone004">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_11_dark__di5n0jory1me_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 11</span><br>		
@@ -367,21 +370,21 @@
 		<div style="background-color : #1d1d1f;">
 			<div class="container">
 				<div class="container">
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=Watch001">
 							<img class="i-img" src="https://www.apple.com/v/watch/home/ah/images/overview/icons/watch_nav_se_dark__b1hx7qxysfki_large.svg"><br>
 						<span class="a">
 							<span class="font">Apple Watch Series 6</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=Watch002">
 							<img class="i-img" src="https://www.apple.com/v/watch/home/ah/images/overview/icons/watch_nav_series_2_dark__c5n56op28mwm_large.svg"><br>
 						<span class="a">
 							<span class="font">Apple Watch SE</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="#">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=Watch003">
 							<img class="i-img" src="https://www.apple.com/v/watch/home/ah/images/overview/icons/watch_nav_edition_dark__zni7jv5ygheu_large.svg"><br>
 						<span class="a">
 							<span class="font">Apple Watch Series 3</span><br>		
