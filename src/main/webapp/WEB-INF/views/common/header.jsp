@@ -306,27 +306,27 @@
 		<div style="background-color : #1d1d1f;">
 			<div class="container">
 				<div class="container">
-					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone001">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=iphone001">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_12_pro_dark__c1xodf0hb1w2_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 12 Pro</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone002">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=iphone002">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_12_dark__d7asodlag7e6_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 12</span><br>		
 							<span class="new">new</span>
 						</span>		
 					</a>
-					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone003">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=iphone003">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_se_dark__b1b8q1iya5o2_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone SE</span><br>		
 						</span>		
 					</a>
-					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=ipgone004">
+					<a class="icon-box" href="<%=request.getContextPath() %>/buy?num=iphone004">
 							<img class="i-img" src="https://www.apple.com/v/iphone/home/at/images/chapternav/iphone_11_dark__di5n0jory1me_large.svg"><br>
 						<span class="a">
 							<span class="font">iPhone 11</span><br>		
