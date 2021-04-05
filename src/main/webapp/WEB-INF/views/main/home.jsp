@@ -35,19 +35,22 @@
 		background-image: url(https://www.apple.com/v/home/w/images/heroes/iphone-12-pro/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
 		height: 500px;
 		background-position: center;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.home-img-box3{
 		background-image: url(https://www.apple.com/v/home/w/images/heroes/ipad-air/hero__dvsxv8smkkgi_large.jpg);
 		height: 400px;
 		background-position: center;
-		margin-top: 20px;
+		background-repeat: no-repeat;
+		margin-top: 30px;
 	}
 	.home-img-box4{
 		background-image: url(https://www.apple.com/v/home/w/images/promos/macbook-air/macbook_air__knzp0i282eyy_large.jpg);
 		height: 500px;
-		background-position: center;
-		margin-top: 20px;
+		background-position: center;		
+		background-repeat: no-repeat;
+		background-color: black;
+		margin-top: 30px;
 	}
 	.home-img-box5{
 		background-image: url(https://www.apple.com/kr/home/w/images/promos/watch-series-6/tile__cauwwcyyn9hy_large.jpg);

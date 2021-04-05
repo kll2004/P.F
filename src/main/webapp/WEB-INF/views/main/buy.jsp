@@ -13,7 +13,6 @@
 		width: 50%;
 	}
 	.buy-left-top-img{
-		width: 410px;
 		height: 237px;
 		margin-top : 25px;
 	}
@@ -49,6 +48,7 @@
 		border-radius:12px;
 		border-width:1px;
 		padding:15px;
+		background-color: white;
 	}
 	</style>
 </head>
@@ -92,16 +92,16 @@
 				<div class="buy-right-memory">
 					<span class="sub-title">메모리</span><br>
 					<a>나에게 알맞은 메모리 용량은 무엇일까요?</a>
-					<div class="c-box">8GB 통합 메모리</div>
-					<div class="c-box">16GB 통합 메모리</div>
+					<button class="c-box" style="display: block; width: 100%">8GB 통합 메모리</button>
+					<button class="c-box" style="display: block; width: 100%">16GB 통합 메모리</button>
 				</div>
 				<div class="buy-right-GB">
 				<span class="sub-title">저장장치</span><br>
 				<a>나에게 알맞은 저장 장치는 무엇일까요?</a>
-					<div class="c-box">255GB SSD 저장 장치</div>
-					<div class="c-box">512GB SSD 저장 장치</div>
-					<div class="c-box">1TB SSD 저장 장치</div>
-					<div class="c-box">2TB SSD 저장 장치</div>
+					<button class="c-box" style="display: block; width: 100%">255GB SSD 저장 장치</button>
+					<button class="c-box" style="display: block; width: 100%">512GB SSD 저장 장치</button>
+					<button class="c-box" style="display: block; width: 100%">1TB SSD 저장 장치</button>
+					<button class="c-box" style="display: block; width: 100%">2TB SSD 저장 장치</button>
 				</div>
 				<div class="buy-right-keyboard">
 					<span class="sub-title">키보드 언어</span><br>
